@@ -1,0 +1,190 @@
+html{
+  font-size: 30px;
+  
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  nav {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .burger{
+    display: none;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button {
+    background-color: #555;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .section {
+    padding: 40px;
+    background-color: #f1f1f1;
+    margin:20px ;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    
+  }
+  
+  .section1 {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    gap: 30px;
+  }
+
+  
+  
+  .section1 img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .section1 h2 {
+    font-size: 2.5rem;
+  }
+ .ourcat{
+  display: flex;
+  justify-content: center;
+ }
+  .ourcat img{
+    width: 60%;
+    
+  }
+  
+  .catGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+  }
+  
+  .catGrid img {
+    width: 100%;
+    height: auto;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+
+ /*  @media (max-width: 768px){
+    .container{
+    flex-direction: column;
+    }
+    body{
+      background-color: red;
+    }
+  } */
+
+  @media (max-width: 1200px){
+    .section1{
+    text-align: center;
+    gap: 30px;
+    flex-direction: column;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 30px;
+    }
+
+    .button{
+      padding:20px;
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 768px){
+    .section{
+    flex-direction: column;
+    margin:20px 10px;
+   
+    }
+    .section1 img {
+      width:300px;
+      height: auto;
+      border-radius: 10px;
+    }
+    .container{
+      width: 100%;
+    }
+
+    .section1Text{
+      text-align: center;
+    }
+
+  
+    html{
+      font-size: 20px;
+    }
+  
+
+    .ourcat img{
+      width: 90%;
+    }
+
+    .section{
+      text-align: center;
+      padding: 20px 10px
+    }
+
+    .button{
+      padding:20px;
+      font-size: 20px;
+    }
+
+    .header{
+     width: 100%;
+    }
+
+
+    .burger{
+      display: inline;
+      padding: 10px;
+      font-size: 30px;
+    }
+    
+    .nav{
+      display: none;
+    }
+  }}
